@@ -65,8 +65,18 @@
   width: 100%;
   border: 1px solid var(--grey-4);
   border-radius: var(--radius);
+  padding: 16px 20px; 
+  color: var(--grey-3);
+}
+
+
+.form__text::placeholder{
+  color: var(--grey-3);
+}
+
+.form__text:focus{
+  border-color:  var(--primary-color);
   color: var(--grey-2);
-  padding: 16px 20px;
 }
 
 .form__textarea{
@@ -78,10 +88,16 @@
   border-radius: var(--radius);
   height: 140px;
   width: 100%;
-  color: var(--grey-2);
+  color: var(--grey-3);
   padding: 16px 20px;
   resize: none;
   box-sizing: border-box;
+}
+
+.form__textarea:focus{
+  border-color:  var(--primary-color);
+  color: var(--grey-2);
+  outline: none;
 }
 
 .form__button{

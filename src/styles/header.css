@@ -23,3 +23,8 @@
   font-weight: var(--weight-text-1);
   cursor: pointer;
 }
+
+.header__exit:hover{
+  font-size: var(--size-text-2);
+  font-weight: var(--weight-title-1);
+}
