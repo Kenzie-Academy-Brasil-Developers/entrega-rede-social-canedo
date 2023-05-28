@@ -19,17 +19,18 @@
 
   --weight-title-1: 700;
   --weight-title-2: 600;
-  --size-title-1: 1.75rem;
-  --size-title-2: 1.25rem;
-  --height-title-1: 2.5rem;
-  --height-title-2: 1.5rem;
+  --size-title-1: 1.75rem; /*28px*/
+  --size-title-2: 1.25rem; /*20px*/
+  --height-title-1: 2.5rem; /*40px*/
+  --height-title-2: 1.5rem; /*24px*/
 
   --weight-text-1: 400;
-  --size-text-1: 1rem;
-  --size-text-2: 0.875rem;
-  --size-text-3: 0.75rem;
-  --height-text-1: 1.75rem;
-  --height-text-2: 1rem;
+  --size-text-1: 1rem; /*16px*/
+  --size-text-2: 0.875rem; /*14px*/
+  --size-text-3: 0.75rem; /*12px*/
+  --height-text-1: 1.75rem; /*28px*/
+  --height-text-2: 1rem; /*16px*/
+  --height-text-3: 1.2rem; /*19px*/
 
  
 }
