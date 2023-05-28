@@ -7,6 +7,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/global.css" />
+    <link rel="stylesheet" href="./src/styles/header.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
 
     <!-- FONTE -->
@@ -19,5 +21,85 @@
 
     <title>Criando rede social</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header__container">
+      <h1 class="header__logo">TechPosters</h1>
+      <h3 class="header__exit">Sair</h3>
+    </header>
+    <main>
+      <section class="main__container">
+        <section class="section__container-primary">
+          <div class="div__container">
+            <div class="div__profile">
+              <figure class="figure__container">
+                <img src="" alt="profile">
+              </figure>
+              <div>
+                <h2 class="div__title">Samuel Leão</h2>
+                <p class="div__text">Front end Egineer</p>
+              </div>
+            </div>
+            <form class="form__container">
+              <input type="text" class="form__text">
+              <textarea id="" cols="30" rows="10"  class="form__textarea"></textarea>
+              <button class="form__button">Postar</button>
+            </form>
+          </div>
+        </section>
+        <aside class="aside__container">
+          <section class="section__suggestion">          
+            <h2>Sugestões para você seguir</h2>
+          <div>
+            <figure>
+              <img src="">
+            </figure>
+            <h2>Carlos Lima</h2>
+            <p>UX e UI Desgner</p>
+            <form>
+              <button>Seguir</button>
+            </form>
+            <figure>
+              <img src="">
+            </figure>
+            <h2>Carlos Lima</h2>
+            <p>UX e UI Desgner</p>
+            <form>
+              <button>Seguir</button>
+            </form>
+            <figure>
+              <img src="">
+            </figure>
+            <h2>Carlos Lima</h2>
+            <p>UX e UI Desgner</p>
+            <form>
+              <button>Seguir</button>
+            </form>
+          </section>
+
+            
+        </div>
+        </aside>
+      </section>
+      <section class="section__container-secundary">
+        <h2>Posts</h2>
+        <div>
+          <figure>
+            <img src="" alt="">
+          </figure>
+          <h3>Samuel Persuhn</h3>
+          <p>Front end Engineer</p>
+        </div>
+        <div>
+          <h2>Empresa de tecnologia de informção abre vagas para programa de estágio</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, rerum autem? Consequatur non, blanditiis quis ea dolorem in, rem dignissimos magni</p>
+        </div>
+        <div>
+          <button>Abrir Post</button>
+          <button><img src="" alt=""></button>
+        </div>
+      </section>
+    
+    </main>
+    <footer></footer>
+  </body>
 </html>

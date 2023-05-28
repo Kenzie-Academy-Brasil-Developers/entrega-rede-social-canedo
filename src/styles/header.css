@@ -1,0 +1,23 @@
+
+.header__container{
+  font-family: var(--font-family);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  color: var(--white);
+  height: 76px;
+  width: 100vw;
+  padding: 30px 100px;
+  background-color: var(--grey-0);
+}
+
+.header__logo{
+  font-size: var(--size-title-2);
+  font-weight: var(--height-title-2);
+
+}
+
+.header__exit{
+  font-size: var(--size-text-3);
+  font-weight: var(--weight-text-1);
+}
