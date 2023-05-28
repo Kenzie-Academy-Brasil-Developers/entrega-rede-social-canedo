@@ -14,10 +14,12 @@
 .header__logo{
   font-size: var(--size-title-2);
   font-weight: var(--height-title-2);
+  cursor: pointer;
 
 }
 
 .header__exit{
   font-size: var(--size-text-3);
   font-weight: var(--weight-text-1);
+  cursor: pointer;
 }

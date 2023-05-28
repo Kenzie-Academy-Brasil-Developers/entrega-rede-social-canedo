@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="./src/styles/header.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
 
+    <script src="./src/scripts/database.js" defer></script>
+    <script src="./src/scripts/index.js" defer></script>
+
     <!-- FONTE -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -51,7 +54,7 @@ Antes de iniciar a criação de qualquer projeto, busque referências de aplica�
         <aside class="aside__container">
           <section class="section__suggestion">          
             <h2 class="suggestion__title">Sugestões para você seguir</h2>
-            <div class="div__suggestion">
+             <!-- <div class="div__suggestion">
               <div class="div__container-sugestion">
                 <figure class="suggestion__figure">
                   <img src="./src/assets/img/user2.svg" alt="prfl">
@@ -63,74 +66,57 @@ Antes de iniciar a criação de qualquer projeto, busque referências de aplica�
                   </div>
                   <button class="btn__profile">Seguir</button>
                 </form>
-              </div>
-              <div class="div__suggestion">
-                <div class="div__container-sugestion">
-                  <figure class="suggestion__figure">
-                    <img src="./src/assets/img/user2.svg" alt="prfl">
-                  </figure>
-                  <form class="profile__container">
-                    <div class="div__suggestion-profile">
-                      <h2 class="profile__name">Carlos Lima</h2>
-                      <p class="profile__office">UX e UI Desgner</p>
-                    </div>
-                    <button class="btn__profile">Seguir</button>
-                  </form>
-                </div>
-                <div class="div__suggestion">
-                  <div class="div__container-sugestion">
-                    <figure class="suggestion__figure">
-                      <img src="./src/assets/img/user2.svg" alt="prfl">
-                    </figure>
-                    <form class="profile__container">
-                      <div class="div__suggestion-profile">
-                        <h2 class="profile__name">Carlos Lima</h2>
-                        <p class="profile__office">UX e UI Desgner</p>
-                      </div>
-                      <button class="btn__profile">Seguir</button>
-                    </form>
-                  </div>
-
-
-              <!-- </form>
-              <figure>
-                <img src="" alt="prfl">
-              </figure>
-              <h2>Carlos Lima</h2>
-              <p>UX e UI Desgner</p>
-              <form>
-                <button>Seguir</button>
-              </form>
-              <figure>
-                <img src="" alt="prfl">
-              </figure>
-              <h2>Carlos Lima</h2>
-              <p>UX e UI Desgner</p>
-              <form>
-                <button>Seguir</button> -->
-              </form>
-            </div>
+              </div> 
+            </div> -->
           </section> 
         </aside>
       </section>
       <section class="section__container-secundary">
-        <h2>Posts</h2>
-        <div>
-          <figure>
-            <img src="" alt="">
-          </figure>
-          <h3>Samuel Persuhn</h3>
-          <p>Front end Engineer</p>
-        </div>
-        <div>
-          <h2>Empresa de tecnologia de informção abre vagas para programa de estágio</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, rerum autem? Consequatur non, blanditiis quis ea dolorem in, rem dignissimos magni</p>
-        </div>
-        <div>
-          <button>Abrir Post</button>
-          <button><img src="" alt=""></button>
-        </div>
+        <h2 class="secundary__title">Posts</h2>
+        <article class="article__posts">
+          <div class="div__secundary">
+            <img src="./src/assets/img/user2.svg" alt="">
+            <div class="div__secundary-profile">
+              <h3>Samuel Persuhn</h3>
+              <p>Front end Engineer</p>
+            </div>
+          </div>
+          <div class="secundary__post-user">
+            <h2>Empresa de tecnologia de informção abre vagas para programa de estágio</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, rerum autem? Consequatur non, blanditiis quis ea dolorem in, rem dignissimos magni</p>
+          </div>
+          <div class="secundary__buttons">
+            <button class="btn__open-post">Abrir Post</button>
+            <div class="btn__like__container">
+              <button class="btn__like"><img src="./src/assets/img/logo.svg" alt=""></button>
+              <p>25</p>
+            </div>
+          </div>
+        </article>
+        <article class="article__posts">
+          <div class="div__secundary">
+            <img src="./src/assets/img/user2.svg" alt="">
+            <div class="div__secundary-profile">
+              <h3>Samuel Persuhn</h3>
+              <p>Front end Engineer</p>
+            </div>
+          </div>
+          <div class="secundary__post-user">
+            <h2>Empresa de tecnologia de informção abre vagas para programa de estágio</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, rerum autem? Consequatur non, blanditiis quis ea dolorem in, rem dignissimos magni</p>
+          </div>
+          <div class="secundary__buttons">
+            <button class="btn__open-post">Abrir Post</button>
+            <div class="btn__like__container">
+              <button class="btn__like"><img src="./src/assets/img/logo.svg" alt=""></button>
+              <p>25</p>
+            </div>
+          </div>
+        </article>
       </section>
+
+      </section>
+      
     
     </main>
     <footer></footer>
