@@ -1,26 +1,5 @@
 // import { suggestUsers } from './database'
 
-{/* <article class="article__posts">
-<div class="div__secundary">
-  <img src="./src/assets/img/user2.svg" alt="">
-  <div class="div__secundary-profile">
-    <h3>Samuel Persuhn</h3>
-    <p>Front end Engineer</p>
-  </div>
-</div>
-<div class="secundary__post-user">
-  <h2>Empresa de tecnologia de informção abre vagas para programa de estágio</h2>
-  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, rerum autem? Consequatur non, blanditiis quis ea dolorem in, rem dignissimos magni</p>
-</div>
-<div class="secundary__buttons">
-  <button class="btn__open-post">Abrir Post</button>
-  <div class="btn__like__container">
-    <button class="btn__like"><img src="./src/assets/img/logo.svg" alt=""></button>
-    <p>25</p>
-  </div>
-</div>
-</article> */}
-
 function addCardPaint(posts) {
   const sectionContainerSecundary = document.querySelector(".section__container-secundary");
 
@@ -39,22 +18,18 @@ function addCardPaint(posts) {
     
     const divSecundaryProfile_name = document.createElement("h3");
     divSecundaryProfile_name.innerText = posts[i].user;
-    // divSecundaryProfile_name.className = "profile__container";
     
     const divSecundaryProfile_office = document.createElement("p");
     divSecundaryProfile_office.innerText = posts[i].stack;
-    // divSecundaryProfile_office.className = "div__suggestion-profile";
     
     const secundaryPostUser = document.createElement("div");
     secundaryPostUser.className = "secundary__post-user";
     
     const PostUserTitle = document.createElement("h2");
     PostUserTitle.textContent = posts[i].title;
-    // PostUserTitle.className = "profile__name";
     
     const PostUserText = document.createElement("p");
     PostUserText.textContent = posts[i].text;
-    // PostUserText.className = "profile__office";
     
     const secundaryButtons = document.createElement("div");
     secundaryButtons.className = "secundary__buttons";
@@ -62,6 +37,7 @@ function addCardPaint(posts) {
     const btnOpenPost = document.createElement("button");
     btnOpenPost.className = "btn__open-post";
     btnOpenPost.innerText = "Abrir Post"
+  
 
     const btnLikeContainer = document.createElement("div");
     btnLikeContainer.className = "btn__like__container";
@@ -165,3 +141,81 @@ function likeButton() {
 }
 
 likeButton()
+
+
+function openPost(posts) {
+  const openPosts = document.querySelectorAll(".btn__open-post");
+  const openModal = document.querySelector(".dialog__container");
+
+  openPosts.forEach(function (button, index) {
+    button.addEventListener("click", function (e) {
+      e.preventDefault();
+
+  
+      openModal.innerHTML = "";
+
+      const post = posts[index];
+
+      const divContainer = document.createElement("div");
+      divContainer.className = "div__container";
+
+      const divClose = document.createElement("div");
+      divClose.className = "div__close";
+
+      const divModalPrimary = document.createElement("div");
+      divModalPrimary.className = "div__modal-primary";
+
+      const divModalSecundary = document.createElement("div");
+      divModalSecundary.className = "div__modal-secundary";
+
+      const btnClose = document.createElement("button");
+      btnClose.className = "btn__close";
+      btnClose.innerText = "X";
+
+      const imageModal = document.createElement("figure");
+      imageModal.className = "image__modal";
+
+      const divUser = document.createElement("div");
+      divUser.className = "div__user";
+
+      const imageProfile = document.createElement("img");
+      imageProfile.src = post.img;
+
+      const userName = document.createElement("h2");
+      userName.textContent = post.user;
+      userName.className = "user-name";
+
+      const userOffice = document.createElement("p");
+      userOffice.textContent = post.stack;
+      userOffice.className = "user-office";
+
+      const modalTitle = document.createElement("h1");
+      modalTitle.textContent = post.title;
+      modalTitle.className = "modal__title";
+
+      const modalText = document.createElement("p");
+      modalText.textContent = post.text;
+      modalText.className = "modal__text";
+
+      divModalSecundary.append(modalTitle, modalText);
+      divUser.append(userName, userOffice);
+      imageModal.append(imageProfile);
+      divModalPrimary.append(imageModal, divUser);
+      divClose.appendChild(btnClose);
+      divContainer.append(divClose, divModalPrimary, divModalSecundary);
+      openModal.appendChild(divContainer);
+
+      openModal.showModal();
+    });
+  });
+}
+openPost(posts)
+
+  
+  
+  
+  
+  
+
+
+

@@ -1,0 +1,84 @@
+
+.dialog__container{
+  border-radius: 8px;
+  border: none;
+}
+
+.dialog__container::backdrop{
+  background-color: rgba(0, 0, 0, 0.582);
+}
+
+
+.div__container{
+  display: flex;
+  flex-direction: column;
+  width: 761px;
+  height: 516px;
+  
+  gap: 32px;
+  padding: 20px 24px;
+}
+
+
+.div__close{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn__close{
+  color: var(--grey-3);
+
+}
+
+.div__modal-primary{
+  display: flex;
+  gap: 10px;
+}
+
+.image__modal img{
+  width: 52px;
+  height: 52px;
+}
+
+.div__user{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.user-name{
+  font-size: var(--size-title-2);
+  font-weight: var(--weight-title-2);
+  font-family: var(--font-family);
+  color: var(--grey-1);
+}
+
+.user-office{
+  font-size: var(--size-text-2);
+  font-weight: var(--weight-text-1);
+  font-family: var(--font-family);
+  color: var(--grey-3);
+
+}
+
+.div__modal-secundary{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.moda__title{
+  font-size: var(--size-title-1);
+  font-weight: var(--weight-title-1);
+  line-height: var(--height-title-1);
+  font-family: var(--font-family);
+  color: var(--grey-1);
+}
+
+.moda__text{
+  font-size: var(--height-text-2);
+  font-weight: var(--weight-text-1);
+  line-height: var(--height-text-1);
+  font-family: var(--font-family);
+  color: var(--grey-2);
+}
