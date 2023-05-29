@@ -157,7 +157,7 @@ function openPost(posts) {
       const post = posts[index];
 
       const divContainer = document.createElement("div");
-      divContainer.className = "div__container";
+      divContainer.className = "div__container-model";
 
       const divClose = document.createElement("div");
       divClose.className = "div__close";
@@ -171,6 +171,12 @@ function openPost(posts) {
       const btnClose = document.createElement("button");
       btnClose.className = "btn__close";
       btnClose.innerText = "X";
+      
+      btnClose.addEventListener("click", function(){
+        openModal.close()
+      })
+
+
 
       const imageModal = document.createElement("figure");
       imageModal.className = "image__modal";
@@ -212,8 +218,7 @@ function openPost(posts) {
 openPost(posts)
 
   
-  
-  
+
   
   
 

@@ -9,7 +9,10 @@
   width: 100vw;
   padding: 30px 100px;
   background-color: var(--grey-0);
+  z-index: 100;
 }
+
+
 
 .header__logo{
   font-size: var(--size-title-2);

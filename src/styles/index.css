@@ -4,9 +4,38 @@
   justify-content: space-between;
   padding: 140px 100px;
   padding-bottom: 0px;
-  gap: 20px;
-  margin: 0px 10px;
-  
+ 
+}
+
+@media (max-width: 1300px) {
+  .main__container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .main__container {
+    padding: 90px 10px;
+    padding-bottom: 10px;
+  }
+  .section__container-primary{
+    width: 450px;
+    height: 563px;
+   }
+   .form__container{
+    width: 250px;
+  }
+  .div__primary{
+    width: 450px;
+  }
+  .form__text{
+    font-size: 10px;
+    width: 100%;
+  }
+  .form__textarea{
+    font-size: 10px;
+    width: 100%;
+  }
 }
 
 .section__container-primary{
@@ -127,7 +156,7 @@
 .aside__container{
   display: flex;
   flex-direction: column;
-  width: 421px;
+  width: 351px;
   height: 363px;
 }
 
@@ -135,11 +164,36 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 350px;
+  width: 100%;
   height: 363px;
-
 }
 
+
+
+@media (max-width: 500px) {
+  .section__suggestion {
+    flex-direction: row;
+   overflow: scroll;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .aside__container{
+    
+    height: 80px;
+    flex-direction: row;
+   
+  }
+  .div__suggestion{
+    gap: 0px;
+    width: 33.33%;
+    height: 52px;
+  }
+  .div__container-sugestion{
+    width: 100%;
+    height: 52px;
+  }
+}
 .suggestion__title{
   font-size: var(--size-title-2);
   font-weight: var(--weight-title-2);
@@ -160,7 +214,7 @@
   display: flex;
   flex-direction: row;
   align-items:center;
-  width: 421px;
+  width: 351px;
   height: 52px;
   gap: 10px;
 }
@@ -290,6 +344,15 @@
   margin-bottom: 20px;
 }
 
+@media (max-width: 500px) {
+
+  .section__container-secundary{
+    padding:10px;
+    width: 100%;
+  }
+
+}
+
 .section__container-secundary img{
   width:52px;
   height: 52px;
@@ -303,7 +366,6 @@
   align-items: center;
   padding: 0px;
   gap: 12px;
-  width: 713px;
   height: 52px;
 }
 
@@ -333,7 +395,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
-  width: 713px;
+  
 }
 
 .secundary__post-user h2{
@@ -351,7 +413,7 @@
   line-height: var(--height-text-1);
   font-family: var(--font-family);
   color: var(--grey-2);
-  width: 713px;
+  width: 100%;
   min-height: 156px;
 
 }
@@ -405,11 +467,15 @@
   background-repeat: no-repeat;
   background-color: var(--white);
   filter: grayscale(50);
+ 
+
 }
 
 .btn__like:hover {
   background-color: var(--white);
   filter: none;
+  
+
 }
 
 .btn__like--actived{
@@ -419,4 +485,5 @@
   background-repeat: no-repeat;
   background-color: var(--white);
   filter: none;
+ 
 }
