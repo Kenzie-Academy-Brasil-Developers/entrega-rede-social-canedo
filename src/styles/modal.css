@@ -2,6 +2,7 @@
 .dialog__container{
   border-radius: 8px;
   border: none;
+
 }
 
 .dialog__container::backdrop{
@@ -12,19 +13,23 @@
 .div__container-model{
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   width: 761px;
   height: 516px;
-  
   gap: 32px;
   padding: 20px 24px;
+  box-sizing: border-box;
 }
 
 @media (max-width: 500px) {
 
   .div__container-model{
-    padding:10px;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    width: 460px;
+    height: 636px;
+    overflow: hidden;
+    gap: 5px;
   }
 
 }

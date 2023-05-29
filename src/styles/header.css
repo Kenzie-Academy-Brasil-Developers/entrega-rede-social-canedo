@@ -12,7 +12,11 @@
   z-index: 100;
 }
 
-
+@media (max-width: 500px){
+  .header__container{
+    padding: 30px 40px;
+  }
+}
 
 .header__logo{
   font-size: var(--size-title-2);
