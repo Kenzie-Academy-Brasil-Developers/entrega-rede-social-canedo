@@ -1,4 +1,3 @@
-
 .dialog__container{
   border-radius: 8px;
   border: none;
@@ -29,7 +28,6 @@
   right: 0;
   color: var(--grey-3);
   cursor: pointer;
-
 }
 
 .div__modal-primary{
@@ -60,7 +58,6 @@
   font-weight: var(--weight-text-1);
   font-family: var(--font-family);
   color: var(--grey-3);
-
 }
 
 .div__modal-secundary{
@@ -91,11 +88,9 @@
   }
 
   .div__container-model{
-  
     width: 100%;
     height: 636px;
     overflow: hidden;
     gap: 5px;
   }
-
 }

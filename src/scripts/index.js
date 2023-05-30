@@ -60,6 +60,7 @@ function addCardPaint(posts) {
 }
 addCardPaint(posts)
 
+
 function followPeople(suggestUsers) {
   const sectionSeggestion = document.querySelector("#suggestionContent");
 
@@ -175,8 +176,6 @@ function openPost(posts) {
       btnClose.addEventListener("click", function(){
         openModal.close()
       })
-
-
 
       const imageModal = document.createElement("figure");
       imageModal.className = "image__modal";
