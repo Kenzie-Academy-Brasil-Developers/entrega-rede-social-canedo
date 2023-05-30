@@ -1,4 +1,4 @@
- const users = [
+ export const users = [
   {
     id: 1,
     user: "Samuel Leão",
@@ -31,7 +31,7 @@
   },
 ];
 
- const posts = [
+export const posts = [
   {
     id: 1,
     title:
@@ -63,7 +63,7 @@
   },
 ];
 
-const suggestUsers = [
+export const suggestUsers = [
   {
     id: 1,
     user: "Carlos Lima",

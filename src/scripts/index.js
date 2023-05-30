@@ -1,4 +1,4 @@
-// import { suggestUsers } from './database'
+import { suggestUsers,posts,users } from './database.js'
 
 function addCardPaint(posts) {
   const sectionContainerSecundary = document.querySelector(".section__container-secundary");
