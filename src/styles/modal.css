@@ -36,11 +36,13 @@
 
 
 .div__close{
-  display: flex;
-  justify-content: flex-end;
+  position: relative;
 }
 
 .btn__close{
+  position: absolute;
+  top: 0;
+  right: 0;
   color: var(--grey-3);
   cursor: pointer;
 
