@@ -1,6 +1,6 @@
 import { suggestUsers,posts,users } from './database.js'
 
-function addCardPaint(posts) {
+function addPosts(posts) {
   const sectionContainerSecundary = document.querySelector(".section__container-secundary");
 
   for (let i = 0; i < posts.length; i++) {
@@ -58,7 +58,7 @@ function addCardPaint(posts) {
     sectionContainerSecundary.appendChild(articlePosts); 
   }
 }
-addCardPaint(posts)
+
 
 
 function followPeople(suggestUsers) {
@@ -214,12 +214,85 @@ function openPost(posts) {
     });
   });
 }
-openPost(posts)
 
-  
 
+
+//Caro corretor essa função abaixo é a atividade extra
+
+function createPost(){
+const newPost =  document.querySelector(".form__button")
+
+newPost.addEventListener("click", function(e) {
+  e.preventDefault()
+  
+  const articlePosts = document.createElement("article");
+  articlePosts.className = "article__posts";
+
+  const divSecundary = document.createElement("div");
+  divSecundary.className = "div__secundary";
+
+  const imageSecundary = document.createElement("img");
+  imageSecundary.src = users[0].img;
+  
+  const divSecundaryProfile = document.createElement("div");
+  divSecundaryProfile.className = "div__secundary-profile";
+  
+  const divSecundaryProfile_name = document.createElement("h3");
+  divSecundaryProfile_name.innerText = users[0].user;
+  
+  const divSecundaryProfile_office = document.createElement("p");
+  divSecundaryProfile_office.innerText = users[0].stack;
+  
+  const secundaryPostUser = document.createElement("div");
+  secundaryPostUser.className = "secundary__post-user";
+  
+  let postTitle = document.querySelector(".form__text").value;
+  let PostUserTitle = document.createElement('h2');
+  PostUserTitle.textContent = postTitle;
+  
+  let postText = document.querySelector(".form__textarea").value;
+  let PostUserText = document.createElement('p');
+  PostUserText.textContent = postText;
+  
+  const secundaryButtons = document.createElement("div");
+  secundaryButtons.className = "secundary__buttons";
+  
+  const btnOpenPost = document.createElement("button");
+  btnOpenPost.className = "btn__open-post";
+  btnOpenPost.innerText = "Abrir Post"
+
+  const btnLikeContainer = document.createElement("div");
+  btnLikeContainer.className = "btn__like__container";
+
+  const btnLike = document.createElement("button");
+  btnLike.className = "btn__like";
+
+  const btnLikeNumber = document.createElement("p");
+  btnLikeNumber.innerText = posts[0].likes
+  
+  btnLikeContainer.append(btnLike,btnLikeNumber)
+  secundaryButtons.append(btnOpenPost,btnLikeContainer);
+  secundaryPostUser.append(PostUserTitle,PostUserText); 
+  divSecundaryProfile.append(divSecundaryProfile_name,divSecundaryProfile_office);
+  divSecundary.append(imageSecundary,divSecundaryProfile);
+  articlePosts.append(divSecundary,secundaryPostUser,secundaryButtons);
   
   
+  
+  const postsContainer = document.querySelector(".section__container-secundary");
+  const firstPost = postsContainer.firstChild
+  
+  postsContainer.insertBefore(articlePosts, firstPost);
+  
+  
+  document.querySelector(".form__text").value = "";
+  document.querySelector(".form__textarea").value = "";
+});
+
+}
+createPost()
+addPosts(posts)  
+openPost(posts)  
 
 
 
