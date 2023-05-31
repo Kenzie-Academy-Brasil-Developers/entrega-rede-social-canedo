@@ -33,6 +33,7 @@
 .div__modal-primary{
   display: flex;
   gap: 10px;
+  position: relative;
 }
 
 .image__modal img{

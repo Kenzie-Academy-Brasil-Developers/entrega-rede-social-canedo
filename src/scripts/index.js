@@ -160,8 +160,7 @@ function openPost(posts) {
       const divContainer = document.createElement("div");
       divContainer.className = "div__container-model";
 
-      const divClose = document.createElement("div");
-      divClose.className = "div__close";
+  
 
       const divModalPrimary = document.createElement("div");
       divModalPrimary.className = "div__modal-primary";
@@ -205,9 +204,9 @@ function openPost(posts) {
       divModalSecundary.append(modalTitle, modalText);
       divUser.append(userName, userOffice);
       imageModal.append(imageProfile);
-      divModalPrimary.append(imageModal, divUser);
-      divClose.appendChild(btnClose);
-      divContainer.append(divClose, divModalPrimary, divModalSecundary);
+      divModalPrimary.append(imageModal, divUser,btnClose);
+      
+      divContainer.append( divModalPrimary, divModalSecundary);
       openModal.appendChild(divContainer);
 
       openModal.showModal();
@@ -277,13 +276,11 @@ newPost.addEventListener("click", function(e) {
   divSecundary.append(imageSecundary,divSecundaryProfile);
   articlePosts.append(divSecundary,secundaryPostUser,secundaryButtons);
   
-  
-  
   const postsContainer = document.querySelector(".section__container-secundary");
-  const firstPost = postsContainer.firstChild
-  
-  postsContainer.insertBefore(articlePosts, firstPost);
-  
+  const title = document.querySelector(".secundary__title");
+
+  postsContainer.insertBefore(articlePosts, title.nextSibling);
+
   
   document.querySelector(".form__text").value = "";
   document.querySelector(".form__textarea").value = "";
